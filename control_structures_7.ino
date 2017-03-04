@@ -1,0 +1,30 @@
+/****************************************************************
+ **                                                            **
+ **                                                            **      
+ **                       Control Structures 7                                  **
+ **                                                            **
+ **      Erik Soriano                           4-3-17        **                                                      **
+*****************************************************************
+//************************** INCLUDE ****************************
+//************************** VARIABLES **************************/
+int comptar = 11;
+//************************** SETUP *******************************/
+  
+void setup()                    // run once, when the sketch starts
+{
+  Serial.begin(9600);       // set up Serial library at 9600 bps
+  Serial.print("Ara comptare de 0 a ");
+  Serial.println(comptar);
+  for (int i=0; i <= comptar; i++)
+  {
+    Serial.print(i);
+    if ( i < (comptar))
+    {
+      Serial.print("-");
+    }
+  } 
+}
+void loop()     // we need this to be here even though its empty
+{
+}
+
